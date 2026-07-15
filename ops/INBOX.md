@@ -58,6 +58,12 @@ Formato de item:
 - Contexto: Franco pidió una presentación HTML para mostrarle al dueño del terreno (inversionista clave) la visión de un complejo de cabañas operado con software de Vertex Pather. Se creó `ops/socios/pitch-inversionista-2026-07.html`, publicada también como Artifact. Esto activó el dominio `ops/socios/` del roadmap (antes solo documentado).
 - Propuesta: — (resuelto). Copia editable (sin diseño, solo contenido) también en Google Drive de Franco, con link al Artifact.
 
+### INB-008 Backend de reservas
+- Estado: ANALIZADA
+- Fecha: 260715
+- Contexto: El sitio hoy es 100% estático, sin backend. Franco quiere iniciar reservas, conversación con huéspedes por WhatsApp y mucha interacción con clientes a mediano/largo plazo. Ya se conversó una propuesta de stack (no implementada): Node.js/TypeScript en serverless (Cloudflare Workers o Vercel), Supabase (Postgres) para reservas/huéspedes/conversaciones, WhatsApp Cloud API de Meta, Claude API/Agent SDK para la conversación — ver `ops/memory/decisiones.md` si se retoma la discusión completa.
+- Propuesta: Queda como plan a futuro, no arrancar código todavía. Cuando Franco lo apruebe, el primer paso es un spec en `ops/specs/` antes de tocar código (flujo normal del proyecto).
+
 ---
 
 ## Historial (resuelto / descartado)
