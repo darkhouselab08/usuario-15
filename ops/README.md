@@ -8,6 +8,7 @@ Refugio del Cielo es parte de **Vertex Pather**, una apuesta por empresas dirigi
 
 | Archivo/carpeta | Qué es |
 |---|---|
+| [`CONTEXTO.md`](./CONTEXTO.md) | **Empieza aquí si eres nuevo** (Cowork u otro agente): estado actual, qué se puede/no se puede hacer, decisiones clave. |
 | [`ORCHESTRATOR.md`](./ORCHESTRATOR.md) | Perfil, personalidad y roster de skills del orquestador Usuario 15. |
 | [`GITHUB-SETUP.md`](./GITHUB-SETUP.md) | Protocolo de cuenta y repo de GitHub. |
 | [`INBOX.md`](./INBOX.md) | Ideas y decisiones pendientes de aprobación. |
