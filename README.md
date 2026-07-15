@@ -2,7 +2,7 @@
 
 Landing one-page para **Refugio del Cielo**, una cabaña-mirador off-grid en Tobía, Cundinamarca. Internet Starlink garantizado, energía solar y vista de 180° al valle. Enfocada a nómadas digitales y parejas.
 
-**Demo:** pendiente de deploy (ver `ops/INBOX.md` → INB-004).
+**Demo en vivo:** https://darkhouselab08.github.io/usuario-15/
 
 ## Stack
 

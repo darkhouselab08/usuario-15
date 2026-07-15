@@ -35,10 +35,10 @@ Formato de item:
 - Propuesta: Franco provee las 3 fotos → van a frontend/assets/img/.
 
 ### INB-004 Deploy del sitio
-- Estado: IDEA
+- Estado: APROBADA (hecho)
 - Fecha: 260715
-- Contexto: Falta publicar. Opciones: GitHub Pages o Netlify. Ya existe un workflow dormido en `.github/workflows/deploy.yml` que publica `frontend/` vía GitHub Actions — falta decidir plataforma y activar "Pages source: GitHub Actions" en el repo.
-- Propuesta: Decidir plataforma; protocolo de GitHub Pages documentado en `ops/GITHUB-SETUP.md`.
+- Contexto: GitHub Pages gratis no soporta repos privados. Se evaluó Netlify (evita el problema) pero Franco prefirió simplicidad: el proyecto aún es un demo sin información delicada, así que el repo volvió a público y se usa GitHub Pages directo. Revisitar (repo privado + Netlify o GitHub Pro) cuando haya datos sensibles reales en `ops/`.
+- Propuesta: — (resuelto). Sitio en vivo: `https://darkhouselab08.github.io/usuario-15/`. Workflow: `.github/workflows/deploy.yml`, se dispara en cada push a `main` que toque `frontend/`.
 
 ### INB-005 Crear cuenta de GitHub
 - Estado: APROBADA (hecho)

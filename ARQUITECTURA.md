@@ -45,8 +45,9 @@ Se crean solo cuando tengan contenido real, no como scaffolding vacío. Regla: *
 
 ## Reglas de visibilidad y datos sensibles
 
-- El repo es **privado**. `ops/socios/` y `ops/marketing/` pueden contener información de negocio — nunca deben vivir en un repo público.
-- Si algún día el código (`frontend/`, `backend/`) se separa a un repo público para portfolio, `ops/` **no** se replica ahí.
+- El repo es **público** (decisión 260715, ver DEC-260715-05 en `ops/memory/decisiones.md`): mientras el proyecto es un demo sin información delicada, se prioriza simplicidad (GitHub Pages gratis no soporta repos privados) sobre privacidad.
+- Antes de subir algo realmente sensible a `ops/socios/` u `ops/marketing/` (cifras reales, contratos, datos personales de huéspedes/socios), el repo **debe volver a privado** — en ese momento el deploy pasa a Netlify (evita el conflicto con GitHub Pages). Ver `ops/GITHUB-SETUP.md`.
+- Regla mientras el repo sea público: nada en `ops/` puede tener datos reales sensibles — solo visión, narrativa y ejemplos ilustrativos (como el pitch de `ops/socios/`).
 
 ## Cómo crecer esto
 

@@ -1,6 +1,6 @@
 # Protocolo — Cuenta y repo de GitHub
 
-> **Estado:** ✅ Hecho. Cuenta creada, repo `darkhouselab08/usuario-15` conectado y en **privado**. Esta guía queda como referencia/histórico.
+> **Estado:** ✅ Hecho. Cuenta creada, repo `darkhouselab08/usuario-15` conectado y **público** (ver DEC-260715-05 en `ops/memory/decisiones.md` — pasa a privado cuando `ops/` tenga datos reales sensibles). Esta guía queda como referencia/histórico.
 
 Guía paso a paso que se siguió para crear la cuenta y dejar el proyecto **Refugio del Cielo** publicado.
 
@@ -41,7 +41,7 @@ Una vez creada la cuenta:
 1. En GitHub, clic en **+ → New repository**.
 2. **Repository name**: `refugio-del-cielo`
 3. **Description**: "Landing one-page de Refugio del Cielo".
-4. Visibilidad: **Private** — el repo guarda datos de negocio (`ops/`), nunca debe ser público. Ver `ARQUITECTURA.md`.
+4. Visibilidad: **Public** por ahora (simplicidad + GitHub Pages gratis). Pasa a privado cuando `ops/` empiece a tener datos reales sensibles — ver reglas en `ARQUITECTURA.md`.
 5. **No** marques "Add README / .gitignore / license" (ya los tenemos en local).
 6. Clic en **Create repository**.
 7. Conectar el repo local (ya tiene commit inicial) — desde tu terminal, en la carpeta del proyecto:
@@ -60,9 +60,7 @@ El sitio vive en `frontend/`, no en la raíz, así que Pages necesita el modo po
 1. Repo → **Settings → Pages**.
 2. Source: **GitHub Actions**.
 3. Ya existe el workflow `.github/workflows/deploy.yml` que publica `frontend/` en cada push a `main`. En el primer push a `main` después de activar esto, corre solo.
-4. URL resultante: `https://<TU-USUARIO>.github.io/usuario-15/`.
-
-> Pendiente de decisión: GitHub Pages vs Netlify (ver `ops/INBOX.md` INB-004). El workflow queda listo pero dormido hasta activar el Source de arriba.
+4. URL resultante y en vivo: **https://darkhouselab08.github.io/usuario-15/**
 
 ---
 
