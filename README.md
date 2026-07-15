@@ -2,6 +2,8 @@
 
 Landing one-page para **Refugio del Cielo**, una cabaña-mirador off-grid en Tobía, Cundinamarca. Internet Starlink garantizado, energía solar y vista de 180° al valle. Enfocada a nómadas digitales y parejas.
 
+**Demo:** pendiente de deploy (ver `ops/INBOX.md` → INB-004).
+
 ## Stack
 
 Sitio estático: HTML + CSS + JavaScript vanilla. Sin dependencias de build. Fuentes vía Google Fonts (Fraunces + Inter).
@@ -10,29 +12,30 @@ Sitio estático: HTML + CSS + JavaScript vanilla. Sin dependencias de build. Fue
 
 ```
 refugio-del-cielo/
-├── index.html          # Landing (por ahora CSS y JS embebidos)
-├── assets/
-│   ├── img/            # Imágenes del sitio (deck, vista, panorama, historia1-3…)
-│   ├── css/            # Estilos externos (al extraer el <style> de index.html)
-│   ├── js/             # Scripts externos (al extraer el <script>)
-│   └── fonts/          # Fuentes locales (opcional)
-├── docs/               # Brief de diseño, notas, decisiones
-├── .github/            # Workflows / plantillas (CI, deploy a Pages)
-├── .gitignore
-└── README.md
+├── frontend/            # el sitio: HTML/CSS/JS, assets, docs de diseño
+├── ops/                 # operación del proyecto (decisiones, tareas, memoria)
+├── .github/workflows/   # deploy a GitHub Pages
+├── ARQUITECTURA.md      # diseño del repo y roadmap de dominios futuros
+├── CLAUDE.md
+└── LICENSE
 ```
+
+Detalle completo y roadmap (backend, marketing, panel de control) en [`ARQUITECTURA.md`](./ARQUITECTURA.md).
 
 ## Desarrollo local
 
-No requiere build. Basta abrir `index.html` en el navegador, o servir la carpeta:
+No requiere build. Desde `frontend/`:
 
 ```bash
+cd frontend
 python3 -m http.server 8000
-# luego abre http://localhost:8000
+# abre http://localhost:8000
 ```
+
+## Cómo se gestiona este proyecto
+
+Refugio del Cielo es parte de **Vertex Pather**, una apuesta por empresas dirigidas y asistidas por agentes: este repositorio lo opera un orquestador de IA (**Usuario 15**), con pocos humanos en el loop. Cómo funciona eso está documentado en [`ops/README.md`](./ops/README.md).
 
 ## Pendientes
 
-- Agregar imágenes faltantes: `historia1.jpeg`, `historia2.jpeg`, `historia3.jpeg` en `assets/img/`.
-- (Opcional) Extraer el `<style>` a `assets/css/styles.css` y el `<script>` a `assets/js/main.js`.
-- Configurar deploy (GitHub Pages / Netlify).
+Ver [`ops/TASKS.md`](./ops/TASKS.md) (operativos) y [`ops/INBOX.md`](./ops/INBOX.md) (decisiones pendientes).
