@@ -79,3 +79,40 @@ Fuente viva: `ops/TASKS.md` (aprobado, listo para ejecutar) e `ops/INBOX.md` (id
 - `ops/ORCHESTRATOR.md` — quién es y cómo opera Usuario 15.
 - `ops/README.md` — índice completo de la capa operativa.
 - `frontend/docs/README.md` — documentación de producto/diseño.
+
+---
+
+## 9. Última auditoría (260715)
+
+Fotografía puntual preparada para Cowork. Si contradice las secciones de arriba, las secciones de arriba mandan (son la versión viva).
+
+**INFORME DE AUDITORÍA — Refugio del Cielo / Vertex Pather**
+**Fecha:** 2026-07-15 · **Alcance:** repo `darkhouselab08/usuario-15`, deploy, documentación operativa
+
+**1. Objeto**
+Landing one-page de Refugio del Cielo (cabaña-mirador off-grid, Tobía, Cundinamarca). Primer proyecto de Vertex Pather — empresa dirigida y asistida por agentes, con pocos humanos en el loop.
+
+**2. Estado verificado**
+- Sitio en producción, HTTP 200 confirmado: https://darkhouselab08.github.io/usuario-15/
+- Deploy automático vía GitHub Actions (`.github/workflows/deploy.yml`) en cada push a `main` que toque `frontend/`.
+- Repositorio: público. Verificado que GitHub Pages gratis no soporta repos privados; decisión consciente de mantener público mientras no haya datos sensibles (ver hallazgo 5).
+- Estructura del repo separada en `frontend/` (producto) y `ops/` (operación) — ver `ARQUITECTURA.md`.
+
+**3. Entregables de la sesión del 260715**
+- Reorganización completa del repo (commits `ddc2f5c`, `a6928ba`, `517dd9c`).
+- Presentación para el inversionista clave del terreno: versión con diseño (Artifact) en `https://claude.ai/code/artifact/25726bbf-c313-4b6f-9216-535185a1f551`; copia en `ops/socios/pitch-inversionista-2026-07.html`; copia editable en Google Drive de Franco.
+- Este documento (`ops/CONTEXTO.md`) — onboarding para cualquier agente nuevo.
+
+**4. Punto de entrada recomendado**
+Secciones 1–8 de este mismo documento.
+
+**5. Riesgo abierto — visibilidad del repo**
+Repo público por decisión explícita de simplicidad (sin dato sensible real todavía). Regla vigente: nada con cifras reales, contratos o datos personales entra a `ops/` mientras el repo sea público. Revertir a privado + reconsiderar deploy (Netlify) el día que eso cambie — criterio completo en `ARQUITECTURA.md` y `ops/memory/decisiones.md` (DEC-260715-04/05).
+
+**6. Pendientes sin resolver**
+Ver §7 arriba.
+
+**7. Guardrails activos**
+Ver §5 arriba.
+
+*Fuente viva: `ops/INBOX.md` (ideas) y `ops/TASKS.md` (aprobado).*
