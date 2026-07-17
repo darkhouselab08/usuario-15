@@ -64,6 +64,44 @@ Formato de item:
 - Contexto: El sitio hoy es 100% estático, sin backend. Franco quiere iniciar reservas, conversación con huéspedes por WhatsApp y mucha interacción con clientes a mediano/largo plazo. Ya se conversó una propuesta de stack (no implementada): Node.js/TypeScript en serverless (Cloudflare Workers o Vercel), Supabase (Postgres) para reservas/huéspedes/conversaciones, WhatsApp Cloud API de Meta, Claude API/Agent SDK para la conversación — ver `ops/memory/decisiones.md` si se retoma la discusión completa.
 - Propuesta: Queda como plan a futuro, no arrancar código todavía. Cuando Franco lo apruebe, el primer paso es un spec en `ops/specs/` antes de tocar código (flujo normal del proyecto).
 
+### INB-009 Propuesta formal de sociedad para cabañas adicionales
+- Estado: ANALIZADA (prioritaria)
+- Fecha: 260717
+- Contexto: Franco marca como siguiente paso prioritario estructurar una propuesta seria para construir cabañas adicionales bajo esquema de sociedad: el propietario aporta el terreno, nosotros (como constructora) aportamos la edificación. Requiere: (a) estrategia de persuasión al dueño de tierras, (b) perfil/estructura empresarial idónea de la constructora, (c) ruta de financiamiento.
+- Propuesta: Redactar un documento marco en `ops/socios/` (estructura de la sociedad, propuesta de valor, opciones de reparto y de financiamiento) SIN cifras inventadas — solo marcadores hasta tener datos reales.
+- Plan de trabajo (260717): `ops/socios/plan-propuesta-sociedad.md` — 6 fases (datos base → investigación → estrategia → borrador → números → cierre). Pendiente: Franco aprueba el plan y decide arrancar por F1 (datos base) o F2 (investigación legal/financiera).
+
+### INB-010 Consolidar y mapear los "arneses de desarrollo"
+- Estado: ANALIZADA (mapeo hecho)
+- Fecha: 260717
+- Contexto: Franco quiere los "arneses de desarrollo" mapeados antes de escalar. Se revisó la *Guía de Harness Engineering* (Drive, 260717) y se mapeó contra la capa `ops/`.
+- Resultado: El núcleo del arnés ya existe (~60%). Ver `ops/HARNESS.md`. **Fase 1 HECHA (260717)** → `ops/PROTOCOLO.md` (SDD Init, Face DAG, Verify, Result Contract). Fase 2: con backend (TDD, sub-agentes). Fase 3: al escalar.
+- Propuesta: Fase 1 cerrada. Fase 2 queda ligada a INB-008 (backend). Decisión de Franco sobre cuándo activarla.
+
+### INB-011 Revisar doc de conceptos clave en Drive
+- Estado: BLOQUEADA
+- Fecha: 260717
+- Contexto: Franco creó en Google Drive un documento con los conceptos clave para el flujo de trabajo en Cowork y la interacción con Claude; quiere abstraerlos para estructurar un flujo más organizado.
+- Propuesta: Falta el link o conectar Google Drive para leerlo. En cuanto llegue, extraer conceptos → posible `ops/memory/` o guía de flujo.
+
+### INB-012 Formalizar modelo de negocio "socio tecnológico estratégico"
+- Estado: IDEA
+- Fecha: 260717
+- Contexto: Modelo para Usuario 15: administración remota de un complejo de cabañas exclusivo para profesionales/empresarios digitales; software con tecnologías emergentes para gestión física local + automatización + dashboard central. Posicionamiento: socio tecnológico estratégico. Alineado con Vertex-Partner ("cerebro digital" para clientes).
+- Propuesta: Documentar la propuesta de valor y el encaje con Vertex Pather. Insumo directo para INB-009.
+
+### INB-013 Visión inmobiliaria de largo plazo
+- Estado: IDEA (visión)
+- Fecha: 260717
+- Contexto: El complejo de cabañas como catalizador de un desarrollo mayor: sector de alta plusvalía con infraestructura vial y residencias de lujo para la comunidad global de profesionales de internet de altos ingresos. Referencias: origen de los Hamptons; modelo Farrell de integración vertical en construcción.
+- Propuesta: Guardar como norte estratégico. No accionar todavía; informa la ambición de INB-009.
+
+### INB-014 Nombre oficial: Vertex Pather vs Vertex-Partner
+- Estado: APROBADA (resuelto)
+- Fecha: 260717
+- Contexto: En el volcado aparecía "Vertex-Partner"; en el repo y en el deck de inversores es "Vertex Pather" ("Pather = socio/partner").
+- Decisión de Franco: nombre canónico **Vertex Pather**; su sentido viene de "partner/socio". Glosario actualizado.
+
 ---
 
 ## Historial (resuelto / descartado)
